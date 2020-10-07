@@ -3,7 +3,7 @@ label {
 }
 
 section {
-  width: 100%;
+  width: 52%;
 }
 
 form { 
@@ -18,7 +18,8 @@ textarea {
   border-right: unset;
   border-bottom: 5px solid black;
   background: transparent;
-  margin-bottom: 10px
+  margin-bottom: 1rem;
+  height: 2em;
 }
 
 .footer {
@@ -29,12 +30,15 @@ textarea {
 textarea:hover {
   border-color:#4056A1;
 }
+
 button {
   border-radius: 3px;
   background:#4056A1;
   color:#FFFFFF;
   font-size: 0.8em;
   text-align: left;
+  margin-bottom: 1rem;
+
 }
 output {
   text-align: right;

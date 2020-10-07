@@ -20,7 +20,11 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+
 
 
     <!-- External JS -->
@@ -42,11 +46,13 @@
 
     </nav>
     <!-- Page-specific (main) content here -->
-    <header>
+    <header id="profile-display">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
-      <br>
+      <div class="spacer">
+        &nbsp;
+    </div>
       <div>
           <h2>Your Name</h2>
       </div>
@@ -63,6 +69,35 @@
           </div>
         </form>
       </section>
+      <article id="tweet-container">
+
+        <header class="article-header">
+
+          <div class="tweet-header">
+            <div class="avatar-container">
+              <img class="avatar-image" src="https://i.imgur.com/73hZDYK.png"> 
+              <p>&nbsp username</p>
+            </div>
+            <p class="tweet-handle">@username</p>
+          </div>
+        </header>
+        <p id="tweet-body">
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugiat nisi
+          <br>
+          <br>  
+        </p>
+
+        <footer class="article-footer">
+          here is the footer
+          <script> let d=new Date();</script>
+
+          footer
+          <!-- When Posted? | 3 tiny shortcuts .fa-->
+        </footer>
+      </article>
     </main>
   </body>
 </html>
+
+

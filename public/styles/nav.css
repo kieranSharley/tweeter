@@ -1,11 +1,14 @@
 nav {
   display:flex;
-  height: 120px;
+  height: 100px;
   border-radius: 3px;
   background:#4056A1;
   color:#FFFFFF;
   padding:1.5em;
-  justify-content:space-between
+  justify-content:space-between;
+  width: 100%;
+  position: fixed;
+  top:0
  }
 
  span.tweetertitle {  
@@ -13,6 +16,7 @@ nav {
    color: #ffffff;
 
  }
+
  .embolden {
   font-weight: strong;
  }
