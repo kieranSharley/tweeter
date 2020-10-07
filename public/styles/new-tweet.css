@@ -1,0 +1,42 @@
+label {
+ border-width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+form { 
+  display: flex;
+  flex-direction: column;
+
+}
+
+textarea {
+  border-top: unset;
+  border-left: unset;
+  border-right: unset;
+  border-bottom: 5px solid black;
+  background: transparent;
+  margin-bottom: 10px
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+}
+textarea:hover {
+  border-color:#4056A1;
+}
+button {
+  border-radius: 3px;
+  background:#4056A1;
+  color:#FFFFFF;
+  font-size: 0.8em;
+  text-align: left;
+}
+output {
+  text-align: right;
+
+}
