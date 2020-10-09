@@ -49,32 +49,29 @@ body {
     min-width: 320px ;
   }
 
+  header #profile-display {
+
+
+    }
+
   #profile-display div {
     width: 100%;
     flex-direction: column;
-
+    padding: 1rem;
+    padding-bottom:unset ;
+    margin-top: 0;
   }
 
   nav.navbar {
     display:flex;
     height: none;
     border-radius: 1px;
-    padding:0em;
-    
+    padding:0rem 1rem;
     justify-content:space-between;
     width: 100%;
     position: relative;
-    top: 50px;
+    top: 5rem;
     background: transparent;
 
    }
-
-   #profile-display div { 
-    padding: 5rem
-  }
-
-
-
-
-
 }

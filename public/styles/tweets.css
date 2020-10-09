@@ -27,11 +27,9 @@ visibility: hidden;
   flex-direction: row;
   justify-content:space-between;
   align-items:center;
-  /* width: 90%; */
   padding-left: 1em;
   padding-right: 1em;
   margin: auto;
-  height:100px;
 }
 .tweet-header .avatar-container {
   display: flex;
@@ -41,10 +39,10 @@ visibility: hidden;
 }
 
 #tweet-body {
-width:90%;
-margin: auto;
-max-width: 80%;
-border: transparent;
+  width:90%;
+  margin: auto;
+  border: transparent;
+  word-wrap: break-word
 }
 
 .article-footer {
