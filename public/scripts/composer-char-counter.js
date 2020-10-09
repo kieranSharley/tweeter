@@ -7,15 +7,30 @@ $(document).ready(function () {
     let maxChars = 140;
     let charsLength = $(this).val().length;
     let charLeftover = maxChars - charsLength;
-    let theDiv = $(this).siblings()[1];
-    let output = $(theDiv).children(".counter");
+    const counter = $(this).siblings("div.footer").children('output')
+    //const turnRed =  counter.css(color, red)
+   $(counter).html(charLeftover);
+
+   if(charsLength > 140 || charsLength === "") {
+     
+     $(counter.css('color', 'red'));
+     $(counter).html(charLeftover);
+   }
+
+    //   counter.css(color, red)
+    //   $(counter).html(charLeftover);
+
+    // } else {
+    // let theDiv = $(this).siblings("div.footer");
+    // let output = $(theDiv).children(".counter");
     //console.log($(this).siblings()[1].find(".counter"))
-    $(output).html(charLeftover);
-    // if(charsLength < 140) {
+    
+    //}
 
     //   else{}
     //}
-
+    
+    // .css('color', 'red')
 
 
   });

@@ -17,19 +17,64 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: 'Source Sans Pro', sans-serif;
-  margin-bottom:2%
+  margin-bottom:2%;
+  margin-top: 7rem;
+  display: flex;
+  align-items: space-between;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
 */
-main {
-  display: flex;
+
+
+.container {
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items:center; 
-  width: 90%;
-  margin: auto
+  width: 95%;
+  margin: auto;
+  padding-right: 5vw;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  body {
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px ;
+  }
+
+  #profile-display div {
+    width: 100%;
+    flex-direction: column;
+
+  }
+
+  nav.navbar {
+    display:flex;
+    height: none;
+    border-radius: 1px;
+    padding:0em;
+    
+    justify-content:space-between;
+    width: 100%;
+    position: relative;
+    top: 50px;
+    background: transparent;
+
+   }
+
+   #profile-display div { 
+    padding: 5rem
+  }
+
+
+
+
+
 }

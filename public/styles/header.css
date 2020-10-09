@@ -1,14 +1,34 @@
 
 #profile-display {
-  margin-top: 100px;
   display:flex;
-  flex-wrap:wrap;
   flex-direction: column;
   align-items: center;
   width:100%;  
-  top: 100px;
+  margin-top: 0vw;
+
+}
+
+#profile-display div {
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   background-color: #ffaa00;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vw;
 }
+
+#profile-display div h2 {
+  display: inline-block;
+  padding-top: 0rem 0.5rem;
+  margin-top: 0vw;
+
+
+}
+
+#profile-display div img {
+padding: 2vw 7vw;
+
+}
+
 
 
