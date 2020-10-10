@@ -8,14 +8,13 @@ nav {
   justify-content: space-between;
   width: 100%;
   position: fixed;
-  top:0;
+  top: 0mm;
 
  }
 
  span.tweetertitle {  
    font-family: 'Bungee', cursive;
    color: #ffffff;
-
  }
 
  .embolden {

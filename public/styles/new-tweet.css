@@ -1,11 +1,10 @@
 label {
  border-width: 100%;
-
 }
 
 section {
   width: 100%;
-  margin-top: 5vw;
+  margin-top: 0vw;
 }
 
 form { 
@@ -45,5 +44,4 @@ button {
 }
 output {
   text-align: right;
-
 }

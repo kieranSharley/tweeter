@@ -6,14 +6,14 @@ $(document).ready(function () {
         <header class="article-header">
           <div class="tweet-header">
             <div class="avatar-container">
-              <img class="avatar-image" src="${tweet.user.avatars}">
-              <p> &nbsp ${tweet.user.name}</p>
+              <img class="avatar-image" src="${escape(tweet.user.avatars)}">
+              <p> &nbsp ${escape(tweet.user.name)}</p>
             </div>
-            <p class="tweet-handle">${tweet.user.handle}</p>
+            <p class="tweet-handle">${escape(tweet.user.handle)}</p>
           </div>
         </header>
         <p id="tweet-body"> 
-        ${tweet.content.text}         
+        ${escape(tweet.content.text)}         
         </p>
         <footer class="article-footer">
         

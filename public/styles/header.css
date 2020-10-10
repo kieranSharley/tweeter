@@ -4,6 +4,8 @@
   flex-direction: column;
   align-items: center;
   width:100%;  
+  margin-top: 0vh;
+
 }
 
 #profile-display div {
@@ -12,7 +14,7 @@
   display:flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5vw;
+  margin-top: 0vh;
 }
 
 #profile-display div h2 {
@@ -24,9 +26,18 @@
 }
 
 #profile-display div img {
-padding: 2vw 7vw;
+  padding: 2vw 7vw;
+}
+
+@media only screen and (max-width: 900px) {
+
+
+
+
 
 }
+
+
 
 
 

@@ -1,5 +1,4 @@
 
-
 article {
   display:flex;
   flex-direction: column;
@@ -15,11 +14,11 @@ article:hover {
 }
 
 article:hover .tweet-handle {
-visibility: visible
+  visibility: visible
 }
 
 .tweet-handle {
-visibility: hidden;
+  visibility: hidden;
 }
  
 .tweet-header   {
@@ -32,7 +31,7 @@ visibility: hidden;
   margin: auto;
 }
 .tweet-header .avatar-container {
-  display: flex;
+  display:flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -42,7 +41,7 @@ visibility: hidden;
   width:90%;
   margin: auto;
   border: transparent;
-  word-wrap: break-word
+  word-wrap: break-word;
 }
 
 .article-footer {
@@ -55,7 +54,6 @@ visibility: hidden;
   padding-bottom: 0.4em;
   border-top: 2px solid black;
 }
-
 
 .tweet-header .avatar-image {
   width: 2em;
