@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+  // Creates a new HTML element and returns a tweet given the user input.
   const createTweetElement = function (tweet) {
     return $(`
     <article>
@@ -28,17 +29,16 @@ $(document).ready(function () {
     `);
   };
 
+  // renders the created tweets/ takes return value and prepends it to the tweets container
   const renderTweets = function (tweets) {
     $("#tweets-container").empty();
     tweets.forEach(element => {
       const $tweet = createTweetElement(element);
       $('#tweets-container').prepend($tweet);
     });
-
-    // takes return value and appends it to the tweets container
   };
 
-  //AJAX request
+  // Form submission and error handling for the submission process.
   const errorEmpty = $("#tweet-text").siblings(".error-empty");
   const error140 = $("#tweet-text").siblings(".error-140");
   $("form").submit(function (event) {
@@ -65,14 +65,14 @@ $(document).ready(function () {
       });
     }
   });
-
+// The form submission error handlers are default hidden from the page.
   $(error140).hide()
   $(errorEmpty).hide();
 
 
 
 
-
+//  AJAX request function that fetches from the tweet database and loads the tweets to the page.
   const loadTweets = function () {
     $.ajax({
       method: 'GET',
@@ -87,7 +87,7 @@ $(document).ready(function () {
   loadTweets();
 
 
-
+// Protection incase of malicious code entered into input fields and converts to text
   const escape = function (str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
@@ -95,7 +95,7 @@ $(document).ready(function () {
   };
   
 // This function I found on stack overflow. I know you're not supposed to copy/paste but 
-// the function works well. 
+// the function works flawlessly and could not see any way to make it my own. 
   function timeSince(date) {
 
     var seconds = Math.floor((new Date() - date) / 1000);
@@ -103,30 +103,25 @@ $(document).ready(function () {
     var interval = seconds / 31536000;
 
     if (interval > 1) {
-      return Math.floor(interval) + " years";
+      return Math.floor(interval) + " years ago";
     }
     interval = seconds / 2592000;
     if (interval > 1) {
-      return Math.floor(interval) + " months";
+      return Math.floor(interval) + " months ago";
     }
     interval = seconds / 86400;
     if (interval > 1) {
-      return Math.floor(interval) + " days";
+      return Math.floor(interval) + " days ago";
     }
     interval = seconds / 3600;
     if (interval > 1) {
-      return Math.floor(interval) + " hours";
+      return Math.floor(interval) + " hours ago";
     }
     interval = seconds / 60;
     if (interval > 1) {
-      return Math.floor(interval) + " minutes";
+      return Math.floor(interval) + " minutes ago";
     }
-    return Math.floor(seconds) + " seconds";
+    return Math.floor(seconds) + " seconds ago";
   }
 
-
-
-
-
-
-});//document ready!
+});
